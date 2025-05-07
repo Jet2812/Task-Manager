@@ -1,0 +1,115 @@
+
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: #4a148c;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+#task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+#task-form input,
+#task-form textarea,
+#task-form select,
+#task-form button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#task-form button {
+  background-color: #6a1b9a;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+#filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+#filters button {
+  flex: 1;
+  padding: 0.5rem;
+  background-color: #ede7f6;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#feedback {
+  margin-top: 1rem;
+  color: green;
+}
+
+#task-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.task-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  border-left: 5px solid #4a148c;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-card.completed {
+  border-left-color: green;
+  text-decoration: line-through;
+}
+
+.task-actions {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+#mobile-add-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4a148c;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #mobile-add-btn {
+    display: block;
+  }
+}
